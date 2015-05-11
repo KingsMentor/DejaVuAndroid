@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:pstsShouldExpand="true"
+        android:background="@drawable/background_tabs" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tabs"
+        android:layout_above="@+id/colors"
+        tools:context=".MainActivity" />
+    <LinearLayout
+        android:id="@+id/colors"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+
+        <TextView
+            android:text="Zone"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:background="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageButton
+            android:layout_gravity="end"
+            android:background="@drawable/ic_launcher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:tag="#FF5161BC" />
+    </LinearLayout>
+
+</RelativeLayout>

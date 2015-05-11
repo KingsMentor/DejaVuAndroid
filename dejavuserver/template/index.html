@@ -1,0 +1,27 @@
+<html>
+
+<body>
+	<form method="post" name="login">
+		<ul>
+			<input onclick="request('2')" name="type" value="Update"
+				type="submit" />
+				<br>
+			<input name="subject" type="text" placeholder="subject" />
+<br>
+			<input name="body" type="text" placeholder="message body" />
+			<br>
+			<input onclick="request('3')" name="type" type="submit" value="Send"
+				class="button" />
+		</ul>
+	</form>
+
+
+	<script type="text/javascript">
+function request(type){
+alert(type);
+}
+
+</script>
+</body>
+
+</html>
